@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Mail, Phone, MapPin, Clock, Send, Check, Loader2, X } from "lucide-react";
+import { Phone, MapPin, Clock, Send, Check, Loader2, X } from "lucide-react";
 import Link from "next/link";
 import { SITE_CONFIG } from "@/lib/constants";
 
@@ -246,18 +246,6 @@ export default function ContactoPage() {
               <div className="space-y-4">
                 <div className="flex gap-4">
                   <div className="w-10 h-10 rounded-full bg-[#A8D5BA]/20 flex items-center justify-center shrink-0">
-                    <Mail size={18} className="text-[#2D5A3D]" />
-                  </div>
-                  <div>
-                    <p className="text-xs text-muted-foreground">Correo electrónico</p>
-                    <a href={`mailto:${SITE_CONFIG.email}`} className="text-sm font-medium text-foreground hover:text-[#2D5A3D] transition-colors">
-                      {SITE_CONFIG.email}
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex gap-4">
-                  <div className="w-10 h-10 rounded-full bg-[#A8D5BA]/20 flex items-center justify-center shrink-0">
                     <Phone size={18} className="text-[#2D5A3D]" />
                   </div>
                   <div>
@@ -284,8 +272,7 @@ export default function ContactoPage() {
                   </div>
                   <div>
                     <p className="text-xs text-muted-foreground">Horario de atención</p>
-                    <p className="text-sm font-medium text-foreground">Lun - Vie: 9:00 - 18:00</p>
-                    <p className="text-sm text-muted-foreground">Sáb: 9:00 - 14:00</p>
+                    <p className="text-sm font-medium text-foreground">Lun - Sáb: 7:00 - 18:00</p>
                   </div>
                 </div>
               </div>
