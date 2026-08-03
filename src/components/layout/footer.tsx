@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Music2, Mail, Phone, MapPin, ExternalLink } from "lucide-react";
+import { Phone, MapPin } from "lucide-react";
 import { SITE_CONFIG } from "@/lib/constants";
 
 const footerLinks = {
@@ -119,16 +119,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-[#D4C5A9]/20">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-muted-foreground">
-            <div className="flex items-center gap-2">
-              <Mail size={14} />
-              <a
-                href={`mailto:${SITE_CONFIG.email}`}
-                className="hover:text-[#2D5A3D] transition-colors"
-              >
-                {SITE_CONFIG.email}
-              </a>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
               <Phone size={14} />
               <span>{SITE_CONFIG.phone}</span>

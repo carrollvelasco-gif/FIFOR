@@ -11,9 +11,9 @@ export const SITE_CONFIG = {
     tiktok: "https://tiktok.com/@fifor",
   },
   email: "hola@fifor.mx",
-  phone: "+57 311 729 8280",
+  phone: "302 804 3427",
   whatsapp: "573028043427",
-  address: "Av. Reforma 222, Col. Juárez, CDMX, México",
+  address: "Bucaramanga, Santander, Colombia",
   shipping: {
     freeFrom: 999,
     standard: 99,
